@@ -1,5 +1,15 @@
 .FirstComp {
   h1 {
-    color: red;
+    padding: 0 0 20px;
+  }
+  article {
+    background-color: rgba(192, 250, 255, 0.1);
+    margin: 15px;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+  h2 {
+    font-size: 1.4rem;
   }
 }

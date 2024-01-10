@@ -1,11 +1,24 @@
+import { isJsxExpression } from "typescript";
 import { useFirstComp } from "./firstComp.hook";
 import "./style.scss";
 
 export const FirstComp: React.FC = () => {
-  const { name } = useFirstComp();
+  const u = useFirstComp();
+
+  if (u.isLoading) return <h1>...loading</h1>;
+  if (u.isError) <pre>{JSON.stringify(u.error)}</pre>;
+
   return (
     <div className="FirstComp">
-      <h1>{name}</h1>
+      <h1>I post dei nostri utenti</h1>
+      {u?.data?.map((e) => (
+        <article key={e.id}>
+          <h2>
+            {e.title} di <i>{e.auth}</i>
+          </h2>
+          <div>{e.abstract}</div>
+        </article>
+      ))}
     </div>
   );
 };

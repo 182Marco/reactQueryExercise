@@ -6,10 +6,23 @@
   box-sizing: border-box; /* Inclusione del bordo nella dimensione totale */
   font-family: "Quicksand", sans-serif;
 }
+@mixin center-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .app {
-  margin: 5% auto 5%;
-  width: 90%;
-  max-height: 90%;
+  background-color: rgb(2, 8, 17);
+  color: rgb(183, 183, 183);
+  display: flex;
+  height: 100vh;
+}
+
+.main-box {
+  height: 90vh;
   max-width: 1100px;
+  padding: 5% 0 5%;
+  width: 90%;
+  overflow: scroll;
 }

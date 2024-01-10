@@ -5,8 +5,10 @@ import "./style.scss";
 function App() {
   return (
     <div className="app">
-      <FirstComp />
-      <SecondComp />
+      <div className="main-box">
+        <FirstComp />
+        <SecondComp />
+      </div>
     </div>
   );
 }
