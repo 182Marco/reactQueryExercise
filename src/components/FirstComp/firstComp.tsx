@@ -1,4 +1,3 @@
-import { isJsxExpression } from "typescript";
 import { useFirstComp } from "./firstComp.hook";
 import "./style.scss";
 
