@@ -10,6 +10,9 @@ export const FirstComp: React.FC = () => {
   return (
     <div className="FirstComp">
       <h1>I post dei nostri utenti</h1>
+      <button onClick={() => u.newPostMutation.mutate("!! NEW ONE !!")}>
+        Aggiungi post
+      </button>
       {u?.data?.map((e) => (
         <article key={e.id}>
           <h2>

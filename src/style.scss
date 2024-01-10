@@ -27,3 +27,22 @@
   width: 90%;
   overflow: scroll;
 }
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #007bff;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3; /* Cambio colore su hover */
+  border-color: #0056b3; /* Cambio bordo su hover */
+}

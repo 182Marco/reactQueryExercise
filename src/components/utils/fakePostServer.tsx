@@ -1,4 +1,6 @@
-export const posts = [
+import { Post } from "./models";
+
+export const posts: Post[] = [
   {
     id: 1,
     title: "L'esplorazione spaziale: oltre i confini dell'universo",
@@ -62,11 +64,12 @@ export const posts = [
     abstract:
       "Scopri i segreti della mente umana e l'arte dell'apprendimento attraverso i suoi meccanismi. Esplora come la psicologia cognitiva e comportamentale ci aiuta a comprendere le modalità con cui acquisiamo conoscenze e sviluppiamo capacità, aprendo nuove strade nell'educazione e nello sviluppo personale.",
   },
-  {
-    id: 10,
-    title: "Arte e architettura: viaggio tra i capolavori",
-    auth: "Elena Bianchi",
-    abstract:
-      "Immergiti nell'affascinante mondo dell'arte e dell'architettura attraverso secoli di creazioni straordinarie. Dalle opere rinascimentali alle costruzioni moderne, scopri come l'arte e l'architettura riflettano la storia, la cultura e le prospettive dei loro creatori, trasformando il nostro modo di percepire il mondo.",
-  },
 ];
+
+export const singlePost: Post = {
+  id: 10,
+  title: "Arte e architettura: viaggio tra i capolavori",
+  auth: "Elena Bianchi",
+  abstract:
+    "Immergiti nell'affascinante mondo dell'arte e dell'architettura attraverso secoli di creazioni straordinarie. Dalle opere rinascimentali alle costruzioni moderne, scopri come l'arte e l'architettura riflettano la storia, la cultura e le prospettive dei loro creatori, trasformando il nostro modo di percepire il mondo.",
+};
