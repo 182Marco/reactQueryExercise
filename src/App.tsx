@@ -1,6 +1,6 @@
-import "./App.css";
-import { Basic, SecondComp } from "./components";
-import "./style.scss";
+import './App.css';
+import { Basic, SecondComp } from './components';
+import './style.scss';
 
 function App() {
   return (

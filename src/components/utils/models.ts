@@ -14,7 +14,7 @@ export interface Author {
   placeOfBirth: string;
   nationality: string;
   bio: string;
-  sex: "M" | "F";
+  sex: 'M' | 'F';
   eyeColor: string;
   hairColor: string;
   height: number;

@@ -1,5 +1,5 @@
-import { useBasic } from "./basic.hook";
-import "./style.scss";
+import { useBasic } from './basic.hook';
+import './style.scss';
 
 export const Basic: React.FC = () => {
   const u = useBasic();
@@ -10,10 +10,10 @@ export const Basic: React.FC = () => {
   return (
     <div className="Basic">
       <h1>I post dei nostri utenti</h1>
-      <button onClick={() => u.newPostMutation.mutate("!! NEW ONE !!")}>
+      <button onClick={() => u.newPostMutation.mutate('!! NEW ONE !!')}>
         Aggiungi post
       </button>
-      {u?.data?.map((e) => (
+      {u?.data?.map(e => (
         <article key={e.id}>
           <h2>
             {e.title} di <i>{e.auth}</i>

@@ -1,5 +1,5 @@
-import { useSecondComp } from "./secondComp.hook";
-import "./style.scss";
+import { useSecondComp } from './secondComp.hook';
+import './style.scss';
 
 export const SecondComp: React.FC = () => {
   const u = useSecondComp();
@@ -11,7 +11,7 @@ export const SecondComp: React.FC = () => {
     <div className="SecondComp">
       <h1> I post dei nostri utenti</h1>
 
-      {u.postQuery?.data?.map((e) => (
+      {u.postQuery?.data?.map(e => (
         <article key={e.id}>
           <h2>
             {e.title} di <i>{e.auth}</i>

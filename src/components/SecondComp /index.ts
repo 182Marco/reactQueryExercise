@@ -1,1 +1,1 @@
-export * from "./secondComp";
+export * from './secondComp';
