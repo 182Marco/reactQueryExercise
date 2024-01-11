@@ -23,8 +23,6 @@ export const useSecondComp = () => {
   const ShowBio: IShowBio = (auth) =>
     !!authQuery?.data?.bio && pickedAuth === auth;
 
-  console.log(`marcom ---> pickedAuth: `, pickedAuth);
-
   return {
     authQuery,
     bio: authQuery?.data?.bio,
