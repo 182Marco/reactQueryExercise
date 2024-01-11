@@ -4,21 +4,23 @@ import "./style.scss";
 export const SecondComp: React.FC = () => {
   const u = useSecondComp();
 
-  if (u.isLoading) return <h1>...loading</h1>;
-  if (u.isError) <pre>{JSON.stringify(u.error)}</pre>;
+  if (u.postQuery.isLoading) return <h1>...loading</h1>;
+  if (u.postQuery.isError) <pre>{JSON.stringify(u.postQuery.error)}</pre>;
 
   return (
     <div className="SecondComp">
-      <h1>BAU BAU I post dei nostri utenti</h1>
-      <button onClick={() => u.newPostMutation.mutate("!! NEW ONE !!")}>
-        Aggiungi post
-      </button>
-      {u?.data?.map((e) => (
+      <h1> I post dei nostri utenti</h1>
+
+      {u.postQuery?.data?.map((e) => (
         <article key={e.id}>
           <h2>
             {e.title} di <i>{e.auth}</i>
           </h2>
           <div>{e.abstract}</div>
+          <button onClick={() => u.setPickedAuth(e.auth)}>
+            Di più sull'autore
+          </button>
+          {u.ShowBio(e.auth) && <div>{u.bio}</div>}
         </article>
       ))}
     </div>
