@@ -6,7 +6,7 @@ export const posts: Post[] = [
     title: "L'esplorazione spaziale: oltre i confini dell'universo",
     auth: "Alessandro Bianchi",
     abstract:
-      "Entra nel mondo dell'esplorazione spaziale e scopri i segreti celati tra le stelle. Attraverso missioni spaziali avvincenti, esplora pianeti, galassie e buchi neri, aprendo le porte a nuove prospettive sul cosmo e sulle potenzialità dell'umanità nell'universo infinito.",
+      "Entra nel mondo dell'esplorazionef spaziale e scopri i segreti celati tra le stelle. Attraverso missioni spaziali avvincenti, esplora pianeti, galassie e buchi neri, aprendo le porte a nuove prospettive sul cosmo e sulle potenzialità dell'umanità nell'universo infinito.",
   },
   {
     id: 2,

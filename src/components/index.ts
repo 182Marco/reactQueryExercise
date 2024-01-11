@@ -1,2 +1,2 @@
-export * from "./FirstComp";
-export * from "./SeconComp";
+export * from "./Basic";
+export * from "./SecondComp ";

@@ -1,15 +1,15 @@
-import { useFirstComp } from "./firstComp.hook";
+import { useSecondComp } from "./secondComp.hook";
 import "./style.scss";
 
-export const FirstComp: React.FC = () => {
-  const u = useFirstComp();
+export const SecondComp: React.FC = () => {
+  const u = useSecondComp();
 
   if (u.isLoading) return <h1>...loading</h1>;
   if (u.isError) <pre>{JSON.stringify(u.error)}</pre>;
 
   return (
-    <div className="FirstComp">
-      <h1>I post dei nostri utenti</h1>
+    <div className="SecondComp">
+      <h1>BAU BAU I post dei nostri utenti</h1>
       <button onClick={() => u.newPostMutation.mutate("!! NEW ONE !!")}>
         Aggiungi post
       </button>

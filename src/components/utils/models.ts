@@ -4,3 +4,21 @@ export interface Post {
   title: string;
   abstract: string;
 }
+
+export interface Author {
+  fullname: string;
+  birthdate: string;
+  age: number;
+  fiscalcode: string;
+  address: string;
+  placeOfBirth: string;
+  nationality: string;
+  bio: string;
+  sex: "M" | "F";
+  eyeColor: string;
+  hairColor: string;
+  height: number;
+  publishedArticles: number;
+  firstPublishDate: number;
+  specialization: string;
+}
