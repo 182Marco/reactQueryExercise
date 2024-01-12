@@ -20,7 +20,7 @@ export const useSecondComp = () => {
     enabled: !!pickedAuth,
   });
 
-  const ShowBio: IShowBio = auth =>
+  const showBio: IShowBio = auth =>
     !!authQuery?.data?.bio && pickedAuth === auth;
 
   return {
@@ -29,6 +29,6 @@ export const useSecondComp = () => {
     pickedAuth,
     postQuery,
     setPickedAuth,
-    ShowBio,
+    showBio,
   };
 };

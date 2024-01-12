@@ -20,7 +20,7 @@ export const SecondComp: React.FC = () => {
           <button onClick={() => u.setPickedAuth(e.auth)}>
             Di più sull'autore
           </button>
-          {u.ShowBio(e.auth) && <div>{u.bio}</div>}
+          {u.showBio(e.auth) && <div>{u.bio}</div>}
         </article>
       ))}
     </div>
