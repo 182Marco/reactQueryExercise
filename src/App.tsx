@@ -1,12 +1,12 @@
 import './App.css';
-import { Basic, SecondComp } from './components';
+import { QueryAferAnOther } from './components';
 import './style.scss';
 
 function App() {
   return (
     <div className="app">
       <div className="main-box">
-        <SecondComp />
+        <QueryAferAnOther />
       </div>
     </div>
   );

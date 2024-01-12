@@ -1,9 +1,9 @@
 import { useQuery } from '@tanstack/react-query';
 import { useState } from 'react';
 import { wait, posts, authors } from '../utils';
-import { IShowBio } from './secondComp.models';
+import { IShowBio } from './queryAferAnOther.models';
 
-export const useSecondComp = () => {
+export const useQueryAferAnOther = () => {
   const [pickedAuth, setPickedAuth] = useState('');
 
   const postQuery = useQuery({

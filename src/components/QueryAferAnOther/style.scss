@@ -1,0 +1,24 @@
+.QueryAferAnOther {
+  h1 {
+    padding: 0 0 20px;
+  }
+  article {
+    background-color: rgba(192, 250, 255, 0.1);
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    button {
+      margin-top: 1rem;
+      align-self: flex-end;
+    }
+    button + div {
+      margin-top: 20px;
+    }
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+}

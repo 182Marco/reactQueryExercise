@@ -1,4 +1,4 @@
-.SecondComp {
+.Basic {
   h1 {
     padding: 0 0 20px;
   }
@@ -7,15 +7,6 @@
     margin: 15px 0;
     padding: 15px;
     border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    button {
-      margin-top: 1rem;
-      align-self: flex-end;
-    }
-    button + div {
-      margin-top: 20px;
-    }
   }
 
   h2 {
