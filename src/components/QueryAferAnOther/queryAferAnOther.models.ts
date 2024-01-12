@@ -1,1 +1,1 @@
-export type IShowBio = (auth: string) => boolean;
+export type IShowBio = (auth?: string) => boolean;

@@ -12,7 +12,7 @@ export const useBasic = () => {
 
   const newPostMutation = useMutation({
     mutationFn: (title: string) =>
-      wait(3000).then(() => posts.push({ ...singlePost, title: title })),
+      wait(3000).then(() => posts.push({ ...singlePost, title })),
     onSuccess: () => queryClient.invalidateQueries({ queryKey: ['posts'] }),
   });
 

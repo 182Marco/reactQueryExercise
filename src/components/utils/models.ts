@@ -1,8 +1,8 @@
 export interface Post {
-  id: number | string;
-  auth: string;
-  title: string;
-  abstract: string;
+  id?: number | string;
+  auth?: string;
+  title?: string;
+  abstract?: string;
 }
 
 export interface Author {
@@ -22,3 +22,7 @@ export interface Author {
   firstPublishDate: number;
   specialization: string;
 }
+
+export type IWait = (n: number) => Promise<string>;
+
+export type IgenRandom = (min?: number, max?: number) => number;

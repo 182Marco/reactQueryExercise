@@ -4,7 +4,7 @@ import { wait, posts, authors } from '../utils';
 import { IShowBio } from './queryAferAnOther.models';
 
 export const useQueryAferAnOther = () => {
-  const [pickedAuth, setPickedAuth] = useState('');
+  const [pickedAuth, setPickedAuth] = useState<string>();
 
   const postQuery = useQuery({
     queryKey: ['posts'],
