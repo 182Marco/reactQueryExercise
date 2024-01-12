@@ -8,8 +8,8 @@ export const useContextExample = () => {
   const newPostMutation = useMutation({
     mutationFn: (title: string) =>
       wait(3000).then(() => posts.push({ ...singlePost, title: title })),
-    onSuccess: (data, vars, context) => setMutationContext(context),
     onMutate: vars => ({ firstProp: 1 }),
+    onSuccess: (data, vars, context) => setMutationContext(context),
   });
 
   return {
