@@ -1,0 +1,76 @@
+@import './vars.scss';
+
+.PostExample {
+  background-color: $main-bg-color;
+  border-radius: 5px;
+  color: $text-color;
+  cursor: pointer;
+  h2 {
+    color: $text-color;
+    margin: 0 0 30px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 0;
+  }
+
+  input {
+    background-color: $input-bg-color;
+    border: 1px solid $input-border-color;
+    border-radius: 5px;
+    color: $text-color;
+    margin: 0 0 10px 0;
+    padding: 8px;
+    transition: border-color 0.3s;
+
+    &:focus,
+    &:hover {
+      border-color: $input-hover-focus-border-color;
+    }
+  }
+
+  button {
+    background-color: $button-bg-color;
+    border: 1px solid $button-border-color;
+    color: $button-text-color;
+    cursor: pointer;
+    margin: 0;
+    padding: 10px;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+
+    &:hover {
+      background-color: $button-hover-bg-color;
+      border-color: $button-hover-border-color;
+      color: $button-hover-text-color;
+    }
+  }
+
+  article {
+    background-color: #66fcf20d;
+    border: 2px solid $input-border-color;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    margin: 40px 0 20px;
+    padding: 16px;
+    transition: background-color 0.3s, border-color 0.3s;
+
+    h3 {
+      font-size: 24px;
+      margin: 0 0 8px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 0 0 12px;
+    }
+
+    span {
+      color: $input-border-color;
+      font-size: 14px;
+    }
+  }
+}

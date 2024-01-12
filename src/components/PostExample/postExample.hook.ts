@@ -1,24 +1,35 @@
 import { useMutation } from '@tanstack/react-query';
+import axios from 'axios';
 import { useState } from 'react';
-import { wait, posts, genRandom } from '../utils';
-import { PostPayload } from './postEcample.models';
+import { genRandom, jsonplaceholderPostUrl } from '../utils';
+import { IPost, ISendPost } from './postExample.models';
 
 export const usePostExample = () => {
-  const [title, settitle] = useState('');
-  const [abstract, setabstract] = useState('');
+  const [title, setTitle] = useState('');
+  const [body, setBody] = useState('');
+  const [postedPost, setPostedPost] = useState<IPost>();
 
-  const newPostMutation = useMutation<void, Error, PostPayload>({
-    mutationFn: async ({ title, abstract }) => {
-      await wait(3000);
-      posts.push({ title, abstract, id: genRandom() });
+  const postMutation = useMutation<IPost, Error, IPost>({
+    mutationFn: async addedpost => {
+      const res = await axios.post(jsonplaceholderPostUrl, addedpost);
+      return res?.data;
     },
+    onMutate: () => console.log('this is before mutation'),
+    onSuccess: data => setPostedPost(data),
   });
 
+  const handleSubmit: ISendPost = ev => {
+    ev.preventDefault();
+    const addedPost = { title, body, id: genRandom() };
+    postMutation.mutate(addedPost);
+  };
+
   return {
-    abstract,
-    newPostMutation,
+    body,
+    handleSubmit,
+    postedPost,
+    setBody,
+    setTitle,
     title,
-    setabstract,
-    settitle,
   };
 };
