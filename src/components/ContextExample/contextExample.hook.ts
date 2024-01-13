@@ -1,6 +1,6 @@
 import { useMutation } from '@tanstack/react-query';
 import { useState } from 'react';
-import { wait, posts, singlePost } from '../utils';
+import { wait, posts, singlePost } from '../../utils';
 
 export const useContextExample = () => {
   const [mutationContext, setMutationContext] = useState<unknown>({});

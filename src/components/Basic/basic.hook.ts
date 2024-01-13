@@ -1,5 +1,5 @@
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
-import { wait, posts, singlePost } from '../utils';
+import { wait, posts, singlePost } from '../../utils';
 
 export const useBasic = () => {
   const queryClient = useQueryClient();

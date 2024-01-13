@@ -1,7 +1,7 @@
 import { useMutation } from '@tanstack/react-query';
 import axios from 'axios';
 import { useState } from 'react';
-import { genRandom, jsonplaceholderPostUrl } from '../utils';
+import { genRandom, jsonplaceholderPostUrl } from '../../utils';
 import { IPost, ISendPost } from './postExample.models';
 
 export const usePostExample = () => {

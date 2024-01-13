@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import { useState } from 'react';
-import { wait, posts, authors } from '../utils';
+import { wait, posts, authors } from '../../utils';
 import { IShowBio } from './queryAferAnOther.models';
 
 export const useQueryAferAnOther = () => {
