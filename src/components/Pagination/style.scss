@@ -1,0 +1,54 @@
+.Pagination {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  h1 {
+    padding: 0 0 20px;
+  }
+  article {
+    background-color: rgba(192, 250, 255, 0.1);
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+  section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px;
+
+    button {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+
+      &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+
+      &:first-child {
+        margin-right: 10px;
+      }
+
+      &:last-child {
+        margin-left: 10px;
+      }
+    }
+
+    p {
+      margin: 0;
+      font-size: 16px;
+    }
+  }
+}
