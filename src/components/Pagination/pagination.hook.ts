@@ -13,7 +13,7 @@ export const usePagination = () => {
     queryClient.prefetchQuery({
       queryKey: ['posts', nextPage],
       queryFn: async () => {
-        const res = await axios.get(paginatedJphPostsUrl(currentPage));
+        const res = await axios.get(paginatedJphPostsUrl(nextPage));
         return res.data;
       },
     });
