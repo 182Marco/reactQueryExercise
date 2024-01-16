@@ -1,5 +1,5 @@
 import { useGetPostsHook } from '../../cutomQueryHooks';
-import { IPostData } from './models';
+import { IPostData } from '../../utils';
 import './style.scss';
 
 export const BasicWithCustomHook: React.FC = () => {

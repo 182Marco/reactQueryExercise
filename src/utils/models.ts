@@ -23,6 +23,14 @@ export interface Author {
   specialization: string;
 }
 
+// JsonPlaceholderobj
+export interface IPostData {
+  userId: number;
+  id: number;
+  title: string;
+  body: string;
+}
+
 export type IWait = (n: number) => Promise<string>;
 
 export type IgenRandom = (min?: number, max?: number) => number;

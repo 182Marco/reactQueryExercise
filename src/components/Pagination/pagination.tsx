@@ -1,4 +1,4 @@
-import { IPostData } from '../BasicWithCustomHook/models';
+import { IPostData } from '../../utils';
 import { usePagination } from './pagination.hook';
 import './style.scss';
 
